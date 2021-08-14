@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    font-family: 'VT323', monospace;
+    font-size: 15vh;
+}
+.line{
+    height: 15vh;
+}
+#message{
+    color: #48fc3e;
+}
+
+#cursor{
+    animation: blinker 1.5s linear infinite;
+    margin-left: 10px;
+    height:80%;
+    width: 50px;
+    background-color: #48fc3e;
+    display:inline-block;
+}
+
+@keyframes blinker {
+    25%{
+        opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+  }
